@@ -93,7 +93,7 @@ function Portfolio() {
                   window.open("https://github.com/CyCodez/careFinder")
                 }
               >
-                <a href="https://github.com/CyCodez/careFinder">github</a>
+               github
               </button>
               <button
                 className="pt-btn"
@@ -101,7 +101,7 @@ function Portfolio() {
                   window.open("https://carefinder-project.web.app/")
                 }
               >
-                <a href="https://carefinder-project.web.app/">live demo</a>
+               live demo
               </button>
             </div>
           </div>
