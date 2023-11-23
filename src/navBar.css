@@ -154,8 +154,8 @@
     font-size: 2rem;
 }
 .skill-container{
-    width: 80%;
-    margin:3rem auto;
+    width: 100%;
+    margin:0 auto;
     padding:2rem;
     height: 110rem;
 }
