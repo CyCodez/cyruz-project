@@ -133,6 +133,13 @@
 .my-image{
     width:100%;
 }
+.logo {
+  height: 50px;
+  width:100%;
+  background-color: #090937;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .name{
     line-height: 1.2;
     margin-bottom: 2rem;
