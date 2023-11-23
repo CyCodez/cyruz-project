@@ -65,10 +65,7 @@ function About() {
         contributing to open source has been a sure fire way to improving my
         skill and keep me up to date with latest technologies in software. Among
         my exciting tech journey and experience is the Privledge of passing
-        through altSchool with a diploma in Frontend Engineering With the
-        increase in Cyber-Attack and software vulnurabilities I am Currenctly
-        taking a course on cyber security, so as to better secure any
-        organization I work for. I have a keen Interest in developing efficient
+        through altSchool with a diploma in Frontend Engineering. I have a keen Interest in developing efficient
         and reliable solutions while meeting user expectation and satisfaction{" "}
       </div>
     </div>
