@@ -190,6 +190,18 @@ padding:2rem;
 form input, form input:focus{
     max-width:100%;
     padding:0;
+    padding:1.5rem;
 }
+textarea{
+  border-radius: 15px;
+  margin-top: 1rem;
+  border: 2px solid hsla(207, 91%, 64%, 0.781);
+  background-color: transparent;
+  color:#ccc;
+  padding:1.5rem;
+  height: 30rem;
+  width:100%;
+}
+
 }
 
