@@ -90,7 +90,7 @@ function Portfolio() {
                   window.open("https://github.com/CyCodez/careFinder")
                 }
               >
-               github
+                github
               </button>
               <button
                 className="pt-btn"
@@ -98,7 +98,7 @@ function Portfolio() {
                   window.open("https://carefinder-project.web.app/")
                 }
               >
-               live demo
+                live demo
               </button>
             </div>
           </div>
@@ -260,7 +260,9 @@ function Portfolio() {
               </button>
               <button
                 className="pt-btn"
-                onClick={() => window.open("travel-list-app01.netlify.app")}
+                onClick={() =>
+                  window.open("https://travel-list-app01.netlify.app")
+                }
               >
                 live demo
               </button>
