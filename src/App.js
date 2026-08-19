@@ -498,6 +498,7 @@ function Skills() {
             <div className="xp">Experienced</div>
           </div>
         </div>
+        
 
         <div className="skill-list">
           <div>
