@@ -47,10 +47,10 @@ const [isNavExpanded, setIsNavExpanded] = useState(false);
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#about">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#contact">Project</a>
+            <a href="#project">Project</a>
           </li>
           <li>
             <a className="main-nav-link nav-cta" href="#contact">

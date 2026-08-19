@@ -1,5 +1,6 @@
 import "./App.css";
 import rout from "./router-app.png.png";
+import profile from "./profile-pics.jpeg"
 import testimony from "./testimony.jpeg";
 import food from "./food.jpeg";
 import chair from "./chair.jpeg";
@@ -8,6 +9,7 @@ import pizza from "./pizza.jpeg";
 import care from "./care-finder.jpeg";
 import mobile from "./mobile-app.jpeg";
 import tour from "./tour.jpeg";
+import studentdb from "./student-db.jpeg"
 import { FaEnvelope } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -38,15 +40,15 @@ function Home() {
             {" "}
             I build and design Beautiful user Interfaces
           </h4>
-          <a href="#contact" class="btn btn--full margin-right-sm">
+          <a href="#contact" className="btn btn--full margin-right-sm">
             Send me an email
           </a>
         </div>
 
-        <div class="hero-img-box">
+        <div className="hero-img-box">
           <img
             className="my-image"
-            src="https://avatars.githubusercontent.com/u/100401054?v=4"
+            src={profile}
             alt="profile_pics"
           />
         </div>
@@ -57,18 +59,132 @@ function Home() {
 
 function About() {
   return (
-    <div className="container" id="about">
-      <div className="about-content">
-        <h2>About Me</h2>I started out as a self-taught developer, trying to
-        find the best possible way to improve my learning Experience. working
-        with other developers, building Projects, joining communities and
-        contributing to open source has been a sure fire way to improving my
-        skill and keep me up to date with latest technologies in software. Among
-        my exciting tech journey and experience is the Privledge of passing
-        through altSchool with a diploma in Frontend Engineering. I have a keen Interest in developing efficient
-        and reliable solutions while meeting user expectation and satisfaction{" "}
+<section className="about-section" id="about">
+  <div className="about-container">
+
+    <div className="about-heading">
+      <span className="section-tag">ABOUT ME</span>
+      <h2>Building digital experiences that <span>solve real problems.</span></h2>
+    </div>
+
+    <div className="about-content">
+
+      <div className="about-text">
+        <p>
+          I’m a passionate <strong>Full-Stack Engineer</strong> focused on
+          building scalable, responsive, and user-centered web applications
+          that solve real business problems. I enjoy transforming ideas and
+          complex requirements into clean, functional digital products that
+          create meaningful value for users and businesses.
+        </p>
+
+        <p>
+          My technical experience spans both <strong>frontend and backend
+          development</strong>, with hands-on experience using
+          <strong> HTML, CSS, JavaScript, React, Node.js, Express, and
+          MongoDB</strong>. I enjoy building complete applications, from
+          designing intuitive interfaces to developing APIs, managing
+          databases, and connecting the different layers of an application.
+        </p>
+
+        <p>
+          I hold a <strong>Diploma in Frontend Engineering from AltSchool
+          Africa</strong>, where I developed a strong foundation in modern
+          frontend development and web technologies. I am also currently
+          pursuing a <strong>Full-Stack Engineering course at NIIT</strong>,
+          where I am expanding my knowledge of backend development, databases,
+          APIs, software architecture, and end-to-end application development.
+        </p>
+
+        <p>
+          Beyond writing code, I bring practical experience in
+          <strong> Customer Experience and digital product operations</strong>.
+          This gives me a unique perspective as an engineer because I
+          understand that great software is not only about writing functional
+          code—it is about understanding the people using the product and
+          solving problems that actually matter.
+        </p>
+
+        <p>
+          I’m continuously learning, building, and improving my engineering
+          skills with the goal of becoming an exceptional full-stack engineer
+          capable of designing and delivering <strong>high-quality, scalable,
+          and impactful software products from idea to production.</strong>
+        </p>
+      </div>
+
+      <div className="about-highlights">
+
+        <div className="highlight-card">
+          <span className="highlight-icon">01</span>
+          <div>
+            <h3>Frontend Engineering</h3>
+            <p>
+              Building responsive, accessible, and intuitive interfaces
+              using HTML, CSS, JavaScript, and React.
+            </p>
+          </div>
+        </div>
+
+        <div className="highlight-card">
+          <span className="highlight-icon">02</span>
+          <div>
+            <h3>Backend Development</h3>
+            <p>
+              Developing reliable server-side applications, REST APIs, and
+              business logic with Node.js and Express.
+            </p>
+          </div>
+        </div>
+
+        <div className="highlight-card">
+          <span className="highlight-icon">03</span>
+          <div>
+            <h3>Database & APIs</h3>
+            <p>
+              Designing and managing data-driven applications using MongoDB
+              and integrating frontend applications with backend services.
+            </p>
+          </div>
+        </div>
+
+        <div className="highlight-card">
+          <span className="highlight-icon">04</span>
+          <div>
+            <h3>Business-Focused Engineering</h3>
+            <p>
+              Combining engineering with customer experience to build
+              solutions that address real user and business challenges.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="about-bottom">
+      <div className="education-item">
+        <span>EDUCATION</span>
+        <h3>Diploma in Frontend Engineering</h3>
+        <p>AltSchool Africa</p>
+      </div>
+
+      <div className="education-item">
+        <span>CURRENTLY LEARNING</span>
+        <h3>Full-Stack Engineering</h3>
+        <p>NIIT</p>
+      </div>
+
+      <div className="education-item">
+        <span>FOCUS</span>
+        <h3>Building Scalable Digital Products</h3>
+        <p>Frontend • Backend • APIs • Databases</p>
       </div>
     </div>
+
+  </div>
+</section>
   );
 }
 
@@ -76,18 +192,40 @@ function Portfolio() {
   return (
     <div className="recent-project">
       <h3 className="pt-title" id="project">
-        My Recent Project
+        My Projects
       </h3>
       <div className="container grid">
         <div className="projects">
-          <img src={care} className="project-img" alt="" height="50%" />
+          <img src={pizza} className="project-img" alt="" height="50%" />
           <div className="project-content">
-            <h3>CareFinder Application</h3>
+            <h3>Pizza Application</h3>
             <div className="btn-container">
               <button
                 className="pt-btn"
                 onClick={() =>
-                  window.open("https://github.com/CyCodez/careFinder")
+                  window.open("https://github.com/CyCodez/pizza-menu")
+                }
+              >
+                github
+              </button>
+              <button
+                className="pt-btn"
+                onClick={() => window.open("https://cy-pizza-app.netlify.app/")}
+              >
+                live demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="projects">
+          <img src={studentdb} className="project-img" alt="" height="50%" />
+          <div className="project-content">
+            <h3>Database management System</h3>
+            <div className="btn-container">
+              <button
+                className="pt-btn"
+                onClick={() =>
+                  window.open("https://github.com/CyCodez/student_database_db")
                 }
               >
                 github
@@ -95,7 +233,9 @@ function Portfolio() {
               <button
                 className="pt-btn"
                 onClick={() =>
-                  window.open("https://carefinder-project.web.app/")
+                  window.open(
+                    "https://student-database-frontend-elsx.onrender.com",
+                  )
                 }
               >
                 live demo
@@ -182,7 +322,7 @@ function Portfolio() {
                 className="pt-btn"
                 onClick={() =>
                   window.open(
-                    "https://github.com/CyCodez/testimonials-grid-section"
+                    "https://github.com/CyCodez/testimonials-grid-section",
                   )
                 }
               >
@@ -270,21 +410,23 @@ function Portfolio() {
           </div>
         </div>
         <div className="projects">
-          <img src={pizza} className="project-img" alt="" height="50%" />
+          <img src={care} className="project-img" alt="" height="50%" />
           <div className="project-content">
-            <h3>Pizza Application</h3>
+            <h3>CareFinder Application</h3>
             <div className="btn-container">
               <button
                 className="pt-btn"
                 onClick={() =>
-                  window.open("https://github.com/CyCodez/pizza-menu")
+                  window.open("https://github.com/CyCodez/careFinder")
                 }
               >
                 github
               </button>
               <button
                 className="pt-btn"
-                onClick={() => window.open("https://cy-pizza-app.netlify.app/")}
+                onClick={() =>
+                  window.open("https://carefinder-project.web.app/")
+                }
               >
                 live demo
               </button>
@@ -356,6 +498,7 @@ function Skills() {
             <div className="xp">Experienced</div>
           </div>
         </div>
+
         <div className="skill-list">
           <div>
             <ion-icon
@@ -364,8 +507,8 @@ function Skills() {
             ></ion-icon>
           </div>
           <div>
-            <div>Vue</div>
-            <div className="xp">Basic</div>
+            <div>RestAPI</div>
+            <div className="xp">Intermediate</div>
           </div>
         </div>
         <div className="skill-list">
@@ -391,6 +534,47 @@ function Skills() {
           <div>
             <div>Firebase</div>
             <div className="xp">Basic</div>
+          </div>
+        </div>
+      </div>
+      <div className="skill-container">
+        <div className="skill-title">Backend Development</div>
+        <div className="skill-list">
+          <div>
+            <ion-icon
+              style={{ color: "#4dabf7", width: "20px" }}
+              name="construct-outline"
+            ></ion-icon>
+          </div>
+          <div>
+            {" "}
+            <div>MongoDb</div>
+            <div className="xp">Experienced</div>
+          </div>
+        </div>
+        <div className="skill-list">
+          <div>
+            <ion-icon
+              style={{ color: "#4dabf7", width: "20px" }}
+              name="construct-outline"
+            ></ion-icon>
+          </div>
+          <div>
+            <div>Nodejs</div>
+            <div className="xp">Experienced</div>
+          </div>
+        </div>
+        <div className="skill-list">
+          <div>
+            <ion-icon
+              style={{ color: "#4dabf7", width: "20px" }}
+              name="construct-outline"
+            ></ion-icon>
+          </div>
+          <div>
+            {" "}
+            <div>Java</div>
+            <div className="xp">Intermediate</div>
           </div>
         </div>
       </div>
